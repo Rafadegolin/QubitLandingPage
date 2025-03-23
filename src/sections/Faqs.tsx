@@ -7,29 +7,30 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "How is Layers different from other design tools?",
+    question: "O que são automações e como elas podem ajudar minha empresa?",
     answer:
-      "Unlike traditional design tools, Layers prioritizes speed and simplicity without sacrificing power. Our intelligent interface adapts to your workflow, reducing clicks and keeping you in your creative flow.",
+      "As automações são processos digitais que reduzem tarefas manuais repetitivas, permitindo que sua equipe foque no que realmente importa. Com nossas soluções, você pode automatizar desde o atendimento ao cliente até a gestão de leads, economizando tempo e dinheiro.",
   },
   {
-    question: "Is there a learning curve?",
+    question: "Como a inteligência artificial pode otimizar meus processos?",
     answer:
-      "Layers is designed to feel intuitive from day one. Most designers are productive within hours, not weeks. We also provide interactive tutorials and comprehensive documentation to help you get started.",
+      "A IA pode analisar grandes volumes de dados, identificar padrões e tomar decisões de forma autônoma. Nossos agentes de IA podem ajudar em atendimento, análise de tendências de mercado e até na personalização da experiência do cliente.c",
   },
   {
-    question: "How do you handle version control?",
+    question: "O que são agentes de IA e como posso utilizá-los?",
     answer:
-      "Every change in Layers is automatically saved and versioned. You can review history, restore previous versions, and create named versions for important milestones.",
+      "A IA pode analisar grandes volumes de dados, identificar padrões e tomar decisões de forma autônoma. Nossos agentes de IA podem ajudar em atendimento, análise de tendências de mercado e até na personalização da experiência do cliente.",
   },
   {
-    question: "Can I work offline?",
+    question: "Preciso de conhecimentos técnicos para usar suas soluções?",
     answer:
-      "Yes! Layers includes a robust offline mode. Changes sync automatically when you're back online, so you can keep working anywhere.",
+      "Não! Criamos soluções intuitivas e fáceis de usar. Nossa equipe cuida da implementação para que você possa aproveitar os benefícios sem precisar de conhecimentos avançados.",
   },
   {
-    question: "How does Layers handle collaboration?",
+    question:
+      "Sua empresa está perdendo tempo com tarefas repetitivas enquanto seus concorrentes já automatizaram tudo?",
     answer:
-      "Layers is built for collaboration. You can invite team members to your projects, share feedback, and work together in real-time.",
+      "Não fique para trás! Nossas soluções de automação e IA podem transformar seu negócio, aumentando produtividade, reduzindo custos e liberando sua equipe para focar no que realmente importa. Fale com a gente agora e descubra como acelerar seu crescimento! 🚀",
   },
 ];
 

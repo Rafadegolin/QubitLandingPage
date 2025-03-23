@@ -6,7 +6,7 @@ import desginExample2Image from "@/assets/images/design-example-2.png";
 import Image from "next/image";
 import Pointer from "@/components/Pointer";
 import { motion, useAnimate } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import cursorYouImage from "@/assets/images/cursor-you.svg";
 
 export default function Hero() {
@@ -15,6 +15,22 @@ export default function Hero() {
 
   const [rightDesignScope, rightDesignAnimate] = useAnimate();
   const [rightPointerScope, rightPointerAnimate] = useAnimate();
+
+  const [email, setEmail] = useState("");
+
+  const handleContactClick = () => {
+    if (!email) {
+      alert("Por favor, insira seu e-mail antes de continuar.");
+      return;
+    }
+
+    const subject = encodeURIComponent("Quero saber mais sobre suas soluções!");
+    const body = encodeURIComponent(
+      `Olá, quero melhorar a produtividade da minha empresa com as soluções da Qubit!`
+    );
+
+    window.location.href = `mailto:qubit.flowdev@gmail.com?subject=${subject}&body=${body}`;
+  };
 
   useEffect(() => {
     leftDesignAnimate([
@@ -122,13 +138,16 @@ export default function Hero() {
             <input
               type="email"
               placeholder="Digite seu e-mail"
-              className="bg-transparent px-4 flex-1 w-full"
+              className="bg-transparent px-4 flex-1 w-full outline-none focus:ring-2 focus:ring-violet-700 focus:rounded-full focus:px-2"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <Button
               variant="primary"
               type="submit"
-              className="whitespace-nowrap"
+              className="whitespace-nowrap ml-2 hover:cursor-pointer"
               size="sm"
+              onClick={handleContactClick}
             >
               Contato
             </Button>

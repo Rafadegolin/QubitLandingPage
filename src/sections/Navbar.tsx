@@ -11,7 +11,7 @@ import logoQubit from "@/assets/images/Qubit2.svg";
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Features", href: "#features" },
-  { label: "Integrações", href: "#integrations" },
+  { label: "Ferramentas", href: "#integrations" },
   { label: "FAQs", href: "#faqs" },
 ];
 

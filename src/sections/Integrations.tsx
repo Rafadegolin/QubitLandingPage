@@ -47,23 +47,21 @@ export type IntegrationsType = typeof integrations;
 
 export default function Integrations() {
   return (
-    <section
-      id="integrations"
-      className="py-24 overflow-hidden flex justify-center mx-8"
-    >
+    <section id="integrations" className="py-24 flex justify-center mx-8">
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center lg:gap-16">
           <div>
-            <Tag>Integrações</Tag>
+            <div className="flex justify-center md:justify-start">
+              <Tag>Ferramentas</Tag>
+            </div>
             <h2 className="text-6xl font-medium mt-6">
-              Conectamos soluções a{" "}
-              <span className="text-violet-700 font-semibold">
-                integradores
-              </span>
+              As melhores ferramentas, melhores{" "}
+              <span className="text-violet-700 font-semibold">soluções</span>
             </h2>
             <p className="text-white/50 mt-4 text-lg">
               Nossos soluções abrangem uma gama enorme de ferramentas, softwares
-              e fluxos de processos.
+              e fluxos de processos, acompanhando o que há de mais moderno no
+              mercado.
             </p>
           </div>
           <div>

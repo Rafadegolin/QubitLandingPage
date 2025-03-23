@@ -20,7 +20,7 @@ export default function Footer() {
             />
           </div>
           <div>
-            <nav className="flex gap-6">
+            <nav className="flex gap-6 flex-col md:flex-row justify-center items-center">
               {footerLinks.map((link) => (
                 <a href={link.href} className="text-white/50 text-sm">
                   {link.label}
