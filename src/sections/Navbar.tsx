@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import logoQubit from "@/assets/images/Qubit2.svg";
 
 const navLinks = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "#home" },
   { label: "Features", href: "#features" },
   { label: "Integrações", href: "#integrations" },
   { label: "FAQs", href: "#faqs" },

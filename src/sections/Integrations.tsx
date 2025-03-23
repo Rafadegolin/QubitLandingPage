@@ -1,11 +1,4 @@
 import Tag from "@/components/Tag";
-import figmaIcon from "@/assets/images/figma-logo.svg";
-import notionIcon from "@/assets/images/notion-logo.svg";
-import slackIcon from "@/assets/images/slack-logo.svg";
-import relumeIcon from "@/assets/images/relume-logo.svg";
-import framerIcon from "@/assets/images/framer-logo.svg";
-import githubIcon from "@/assets/images/github-logo.svg";
-import Image from "next/image";
 import IntegrationsColumn from "@/components/IntegrationsColumn";
 import n8nIcon from "@/assets/images/N8N.svg";
 import makeIcon from "@/assets/images/Make.svg";
@@ -54,7 +47,10 @@ export type IntegrationsType = typeof integrations;
 
 export default function Integrations() {
   return (
-    <section className="py-24 overflow-hidden flex justify-center mx-8">
+    <section
+      id="integrations"
+      className="py-24 overflow-hidden flex justify-center mx-8"
+    >
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center lg:gap-16">
           <div>
@@ -75,6 +71,7 @@ export default function Integrations() {
               <IntegrationsColumn integrations={integrations} />
               <IntegrationsColumn
                 integrations={integrations.slice().reverse()}
+                reverse
                 className="hidden md:flex"
               />
             </div>
