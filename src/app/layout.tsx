@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Qubit",
-  description: "Created with the help of Frontend Tribe",
+  description: "Qubit - automações e agenetes de IA para a sua empresa",
 };
 
 export default function RootLayout({
